@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>GITHUB USER</p>
+	
+	<div th:each="issue : ${issues}" >
+		<span th:text="${ issue.gitHubCommit.url}" />
+	</div>
+
+</body>
+</html>
